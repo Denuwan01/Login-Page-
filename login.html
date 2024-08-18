@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit" class="blue-button">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="#" id="create-account">Create Account</a></p>
+        
+        <div class="google-login">
+            <p>or</p>
+            <button id="google-signin" class="google-button">
+                <img src="google logo.jpg" alt="Google Logo" class="google-icon">
+                Login with Google
+            </button>
+        </div>
+    </div>
+
+    <div class="container" id="create-account-container" style="display:none;">
+        <h1>Create Account</h1>
+        <form id="create-account-form">
+            <label for="new-name">Name:</label>
+            <input type="text" id="new-name" required>
+            <label for="new-email">Email:</label>
+            <input type="email" id="new-email" required>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" required>
+            <button type="submit" class="blue-button">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="#" id="back-to-login">Back to Login</a></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
